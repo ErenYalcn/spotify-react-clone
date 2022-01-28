@@ -5,7 +5,8 @@
 
 @layer base {
     html, body, #root{
-        @apply h-full bg-backcolor text-white
+        @apply h-full bg-backcolor text-white antialiased
+        
     }
     #root{
         @apply flex flex-col
