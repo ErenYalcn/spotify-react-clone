@@ -25,6 +25,9 @@ export default function Menu() {
                     <span className='transition-colors'>
                         <Icon name="search" size={24} />
                     </span>
+                    <span className='transition-colors hidden'>
+                        <Icon name="actsearch"/>
+                    </span>
                     Ara
                 </NavLink>
             </li>
@@ -32,6 +35,9 @@ export default function Menu() {
                 <NavLink activeClassName="!text-white" to={"/collection"} href="#" className="h-10 flex items-center text-sm font-bold text-link hover:text-white px-4 gap-4">
                     <span className='transition-colors'>
                         <Icon name="lib" size={24} />
+                    </span>
+                    <span className='transition-colors hidden'>
+                        <Icon name="actcollection"/>
                     </span>
                     Kitaplığın
                 </NavLink>
