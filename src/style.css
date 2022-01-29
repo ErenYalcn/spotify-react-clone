@@ -486,6 +486,10 @@ html, body, #root {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .mb-7 {
   margin-bottom: 1.75rem;
 }

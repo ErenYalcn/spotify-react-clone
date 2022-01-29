@@ -4,7 +4,13 @@ import {Icon} from 'components/Icons';
 import Playlist from './Header/Playlist';
 import DownloadApp from './Header/DownloadApp';
 
+
+
+
 export default function header() {
+  
+
+
     return(
       <div className="w-60 pt-6 bg-black flex flex-col flex-shrink-0">
           <a href="#" className='mb-7 px-6'>
