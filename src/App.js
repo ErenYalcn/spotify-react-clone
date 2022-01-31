@@ -1,18 +1,17 @@
 import Content from 'components/Content'
 import Bottombar from 'components/Bottombar'
 import Header from 'components/Header'
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 function App() {
-
-
-
-
 
   return (
     <Router>
       <div className='wrapper'>
-        <Header />
+
+          <Switch>
+            <Header />
+          </Switch>
         <Content />
       </div>
       <Bottombar />

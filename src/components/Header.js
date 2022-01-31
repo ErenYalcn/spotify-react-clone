@@ -16,6 +16,7 @@ export default function header() {
           <a href="#" className='mb-7 px-6'>
           <img className='h-10 w-auto ' src={logo} />
           </a>
+
           <Menu />
 
           <nav className='mt-8 px-6'>
@@ -44,4 +45,3 @@ export default function header() {
       </div>
     )
   }
-  
