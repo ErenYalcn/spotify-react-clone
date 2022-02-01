@@ -494,6 +494,10 @@ html, body, #root {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -526,16 +530,12 @@ html, body, #root {
   margin-top: 1.25rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .mr-auto {
@@ -546,8 +546,24 @@ html, body, #root {
   margin-left: 1rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-24 {
@@ -568,6 +584,14 @@ html, body, #root {
 
 .h-\[28px\] {
   height: 28px;
+}
+
+.h-\[205px\] {
+  height: 205px;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-60 {
@@ -594,6 +618,10 @@ html, body, #root {
   width: 12rem;
 }
 
+.w-\[205px\] {
+  width: 205px;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -618,8 +646,16 @@ html, body, #root {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -653,28 +689,17 @@ html, body, #root {
           column-gap: 6px;
 }
 
-.gap-x-2 {
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-}
-
 .gap-x-6 {
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
 }
 
-.gap-x-8 {
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
-}
-
-.gap-x-5 {
-  -webkit-column-gap: 1.25rem;
-          column-gap: 1.25rem;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-full {
@@ -689,8 +714,8 @@ html, body, #root {
   border-radius: 23px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border-t {
@@ -726,6 +751,11 @@ html, body, #root {
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
 }
 
+.bg-topbutton {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+}
+
 .bg-brenk {
   background-color: #000000b3;
 }
@@ -733,11 +763,6 @@ html, body, #root {
 .bg-menubg {
   --tw-bg-opacity: 1;
   background-color: rgb(62 62 62 / var(--tw-bg-opacity));
-}
-
-.bg-topbutton {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -761,16 +786,16 @@ html, body, #root {
   padding: 6px;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .px-8 {
@@ -798,8 +823,8 @@ html, body, #root {
   padding-right: 1rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-6 {
@@ -819,30 +844,30 @@ html, body, #root {
   line-height: 1.25rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-\[12px\] {
   font-size: 12px;
 }
 
-.text-\[13px\] {
-  font-size: 13px;
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .text-\[14px\] {
   font-size: 14px;
-}
-
-.text-\[15px\] {
-  font-size: 15px;
 }
 
 .font-bold {
@@ -861,12 +886,12 @@ html, body, #root {
   line-height: 1rem;
 }
 
-.leading-10 {
-  line-height: 2.5rem;
-}
-
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .tracking-wide {
@@ -878,14 +903,14 @@ html, body, #root {
   color: rgb(179 179 179 / var(--tw-text-opacity));
 }
 
-.\!text-white {
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .text-black {
@@ -938,6 +963,11 @@ html, body, #root {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .active\:bg-brenk:active {

@@ -9,7 +9,7 @@ export default function content() {
   return(
     <div className='flex-auto'>
         <Navbar />
-        <div className='px-8 pt-2'>
+        <div className='px-8 pt-5'>
         <Switch>
           <Route exact path="/">
               <Home />

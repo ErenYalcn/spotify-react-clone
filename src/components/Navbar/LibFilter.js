@@ -6,7 +6,7 @@ export default function LibFilter() {
       <nav className='mr-auto ml-4 relative'>
           <ul className='flex gap-x-4'>
               <li>
-                <NavLink className={' p-3 rounded'} activeClassName="bg-topbutton p-3 rounded" to={"/collection/calmalistlerim"}>
+                <NavLink className={' p-3 rounded'} exact activeClassName="bg-topbutton p-3 rounded" to={"/collection"}>
                     <button className='font-semibold text-white active:bg-brenk leading-4 text-[15px] tracking-wide'>
                         Çalma Listeleri
                     </button>
