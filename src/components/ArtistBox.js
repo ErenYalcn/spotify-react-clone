@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export default function PlayBox({title ,see = false, items}) {
+export default function ArtistBox({title ,see = false, singer}) {
   return (
       <section>
           <header className='flex justify-between'>

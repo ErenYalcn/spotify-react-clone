@@ -7,7 +7,7 @@ import Collection from 'views/Collection';
 
 export default function content() {
   return(
-    <div className='flex-auto'>
+    <div className='flex-auto overflow-auto'>
         <Navbar />
         <div className='px-8 pt-5'>
         <Switch>

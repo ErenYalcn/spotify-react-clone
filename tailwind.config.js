@@ -14,7 +14,11 @@ module.exports = {
         gra2: '#c4efd9',
         brenk:'#000000b3',
         menubg:'#3E3E3E',
-        topbutton:'#333333'
+        topbutton:'#333333',
+        dortboxact:'#ffffff4d',
+        dortbox:'#ffffff33',
+        firstbox:'#5028f0'
+
       }
     },
   },
