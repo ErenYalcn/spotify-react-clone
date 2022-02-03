@@ -26,7 +26,8 @@ module.exports = {
         orangebox:'#ba5d07',
         redbox:'#e61e32',
         gra3:'#501FF2',
-        gra4:'#867FE7'
+        gra4:'#867FE7',
+        gribottom: '#a7a7a7'
 
       }
     },

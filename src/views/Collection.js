@@ -33,7 +33,7 @@ export default function Collection() {
 
         <div className='grid grid-cols-2 gap-x-4'>
           <div className='h-[296px] bg-gradient-to-r from-gra3 to-gra4 rounded p-6 group relative'>
-            <div className='mt-12'>
+            <div className='mt-20'>
               <span className='text-sm font-semibold'>Emir Can İğrek</span> <span className='opacity-70'> • Nevale </span>
               <span className='text-sm font-semibold'>Hadise</span> <span className='opacity-70'> • Süpermen </span>
               <span className='text-sm font-semibold'>İbrahim Tatlıses</span> <span className='opacity-70'> • Tamam Aşkım </span>
