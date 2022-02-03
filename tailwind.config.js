@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       rotate: {
         '25': '25deg',
+        '150':'150deg'
       },
       colors:{
         backcolor: '#121212',
@@ -23,7 +24,9 @@ module.exports = {
         firstbox:'#5028f0',
         purplebox:'#8d67ab',
         orangebox:'#ba5d07',
-        redbox:'#e61e32'
+        redbox:'#e61e32',
+        gra3:'#501FF2',
+        gra4:'#867FE7'
 
       }
     },
