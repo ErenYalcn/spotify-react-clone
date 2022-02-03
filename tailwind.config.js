@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      rotate: {
+        '25': '25deg',
+      },
       colors:{
         backcolor: '#121212',
         primary: '#1db954',
@@ -17,7 +20,10 @@ module.exports = {
         topbutton:'#333333',
         dortboxact:'#ffffff4d',
         dortbox:'#ffffff33',
-        firstbox:'#5028f0'
+        firstbox:'#5028f0',
+        purplebox:'#8d67ab',
+        orangebox:'#ba5d07',
+        redbox:'#e61e32'
 
       }
     },

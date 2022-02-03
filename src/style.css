@@ -513,6 +513,10 @@ html, body, #root {
   bottom: 0.5rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -525,8 +529,24 @@ html, body, #root {
   top: 100%;
 }
 
-.right-0 {
-  right: 0px;
+.right-1 {
+  right: 0.25rem;
+}
+
+.-right-0 {
+  right: -0px;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.-right-4 {
+  right: -1rem;
+}
+
+.-right-5 {
+  right: -1.25rem;
 }
 
 .z-10 {
@@ -625,8 +645,24 @@ html, body, #root {
   height: auto;
 }
 
+.h-\[220px\] {
+  height: 220px;
+}
+
+.h-\[128px\] {
+  height: 128px;
+}
+
 .h-\[28px\] {
   height: 28px;
+}
+
+.h-\[108px\] {
+  height: 108px;
+}
+
+.h-\[170px\] {
+  height: 170px;
 }
 
 .w-60 {
@@ -645,6 +681,10 @@ html, body, #root {
   width: 3rem;
 }
 
+.w-\[128px\] {
+  width: 128px;
+}
+
 .w-\[22\.75rem\] {
   width: 22.75rem;
 }
@@ -655,6 +695,14 @@ html, body, #root {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-\[108px\] {
+  width: 108px;
+}
+
+.w-\[170px\] {
+  width: 170px;
 }
 
 .max-w-full {
@@ -671,6 +719,12 @@ html, body, #root {
 
 .translate-y-2 {
   --tw-translate-y: 0.5rem;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-25 {
+  --tw-rotate: 25deg;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -713,6 +767,10 @@ html, body, #root {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-x-3 {
   -webkit-column-gap: 0.75rem;
           column-gap: 0.75rem;
@@ -732,6 +790,11 @@ html, body, #root {
           column-gap: 1rem;
 }
 
+.gap-x-5 {
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+}
+
 .gap-x-\[6px\] {
   -webkit-column-gap: 6px;
           column-gap: 6px;
@@ -739,6 +802,10 @@ html, body, #root {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-y-auto {
@@ -755,6 +822,10 @@ html, body, #root {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-3xl {
@@ -807,6 +878,16 @@ html, body, #root {
   background-color: rgb(29 185 84 / var(--tw-bg-opacity));
 }
 
+.bg-purplebox {
+  --tw-bg-opacity: 1;
+  background-color: rgb(141 103 171 / var(--tw-bg-opacity));
+}
+
+.bg-orangebox {
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 93 7 / var(--tw-bg-opacity));
+}
+
 .bg-topbutton {
   --tw-bg-opacity: 1;
   background-color: rgb(51 51 51 / var(--tw-bg-opacity));
@@ -819,6 +900,11 @@ html, body, #root {
 .bg-menubg {
   --tw-bg-opacity: 1;
   background-color: rgb(62 62 62 / var(--tw-bg-opacity));
+}
+
+.bg-redbox {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 30 50 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -924,6 +1010,11 @@ html, body, #root {
 
 .text-\[14px\] {
   font-size: 14px;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[15px\] {
