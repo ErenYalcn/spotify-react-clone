@@ -1,18 +1,13 @@
 import React from 'react';
-import { useState } from 'react';
-import {Icon} from 'components/Icons';
+
 import { Range, getTrackBackground } from 'react-range';
 import {useAudio} from 'react-use';
-import { secondsToTime } from 'Utils';
 
 export default function MyRange({value, step, min, max, onChange}) {
 
-    const STEP = 0.1;
-    const MIN = 0;
 
-    const [audio, state, controls, ref] = useAudio({
-        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' 
-      });
+
+ 
   return (
     
         <Range

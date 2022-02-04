@@ -27,7 +27,8 @@ module.exports = {
         redbox:'#e61e32',
         gra3:'#501FF2',
         gra4:'#867FE7',
-        gribottom: '#a7a7a7'
+        gribottom: '#a7a7a7',
+        tartist: '#575757'
 
       }
     },

@@ -4,6 +4,7 @@ import ArtistBox from 'components/ArtistBox';
 
 import { NavLink } from 'react-router-dom';
 import {Icon} from 'components/Icons';
+import Song from 'components/Song';
 
 
 export default function Home() {
@@ -14,35 +15,40 @@ export default function Home() {
       id: 1,
       title: 'Farketmeden',
       artist: 'Eren Yalçın',
-      image: 'https://i.scdn.co/image/ab67616d00001e02e9c9fc7a8155861f8db6b28f'
+      image: 'https://i.scdn.co/image/ab67616d00001e02e9c9fc7a8155861f8db6b28f',
+      src: 'https://freesound.org/data/previews/617/617443_1648170-lq.mp3'
     },
 
     {
       id: 2,
       title: 'Uzunlar',
       artist: 'Evdeki Saat',
-      image: 'https://i.scdn.co/image/ab67616d00001e02917b71d0a9aa3396f0031c40'
+      image: 'https://i.scdn.co/image/ab67616d00001e02917b71d0a9aa3396f0031c40',
+      src:'https://freesound.org/data/previews/617/617382_7037-lq.mp3'
     },
 
     {
       id: 3,
       title: 'Kan',
       artist: 'UZI',
-      image: 'https://i.scdn.co/image/ab67616d00001e0267c738a703dc979f5c3c52ef'
+      image: 'https://i.scdn.co/image/ab67616d00001e0267c738a703dc979f5c3c52ef',
+      src:'https://freesound.org/data/previews/617/617306_5674468-lq.mp3'
     },
 
    {
       id: 4,
       title: 'Seni Kendime Sakladım',
       artist: 'Duman',
-      image: 'https://i.scdn.co/image/ab67616d00001e02d5a587c7de8efc3ba32bede7'
+      image: 'https://i.scdn.co/image/ab67616d00001e02d5a587c7de8efc3ba32bede7',
+      src:'https://freesound.org/data/previews/617/617305_11861866-lq.mp3'
     },
 
     {
       id: 5,
       title: 'Seni Dert Etmeler',
       artist: 'Madrigal',
-      image: 'https://i.scdn.co/image/ab67616d00001e029aa96c06d5c346ccf6ffaf8d'
+      image: 'https://i.scdn.co/image/ab67616d00001e029aa96c06d5c346ccf6ffaf8d',
+      src:'https://freesound.org/data/previews/617/617303_1015240-lq.mp3'
     },
 
     
@@ -180,19 +186,8 @@ export default function Home() {
         <PlayBox see />
         </div>
         <div className='grid grid-cols-5 gap-x-6'>
-                {items.map(item => (
-                    <NavLink key={item.id} to="/" className={'bg-footer rounded p-4 transition-all hover:bg-menubg group'}>
-                        <div className='relative '> 
-                          <img className='w-auto h-auto inset-0 object-cover mb-4' src={item.image} />
-                          <button className='w-12 h-12 bg-primary absolute right-2 bottom-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
-                            <Icon name="play"/>
-                          </button>
-                        </div>
-                        <span className='font-semibold text-white text-[16px] whitespace-nowrap'>{item.title}</span> <br />
-                        <span className='mt-1 text-[14px] text-link'>{item.artist}</span>
-                        
-                    </NavLink>
-                ))}
+                {items.map(item => <Song item={item} key={item.id} /> )}
+                
         </div>
         <div className='flex justify-between items-end mb-4 mt-6'>
         <PlayBox title={'Türkçe pop kadın yıldızlar'}/>
