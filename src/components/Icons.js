@@ -173,7 +173,19 @@ const FullScreenicon = ({ size }) => {
 }
 const SoundMuteicon = ({ size }) => {
     return(
-<svg role="presentation" height="16" width="16" aria-label="Ses kapalı" id="volume-icon" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 hDgDGI"><path d="M13.86 5.47a.75.75 0 00-1.061 0l-1.47 1.47-1.47-1.47A.75.75 0 008.8 6.53L10.269 8l-1.47 1.47a.75.75 0 101.06 1.06l1.47-1.47 1.47 1.47a.75.75 0 001.06-1.06L12.39 8l1.47-1.47a.75.75 0 000-1.06z"></path><path d="M10.116 1.5A.75.75 0 008.991.85l-6.925 4a3.642 3.642 0 00-1.33 4.967 3.639 3.639 0 001.33 1.332l6.925 4a.75.75 0 001.125-.649v-1.906a4.73 4.73 0 01-1.5-.694v1.3L2.817 9.852a2.141 2.141 0 01-.781-2.92c.187-.324.456-.594.78-.782l5.8-3.35v1.3c.45-.313.956-.55 1.5-.694V1.5z" fill="currentColor"></path>
+<svg role="presentation" height="16" width="16" aria-label="Ses kapalı" id="volume-icon" viewBox="0 0 16 16"><path d="M13.86 5.47a.75.75 0 00-1.061 0l-1.47 1.47-1.47-1.47A.75.75 0 008.8 6.53L10.269 8l-1.47 1.47a.75.75 0 101.06 1.06l1.47-1.47 1.47 1.47a.75.75 0 001.06-1.06L12.39 8l1.47-1.47a.75.75 0 000-1.06z" fill="currentColor"></path><path d="M10.116 1.5A.75.75 0 008.991.85l-6.925 4a3.642 3.642 0 00-1.33 4.967 3.639 3.639 0 001.33 1.332l6.925 4a.75.75 0 001.125-.649v-1.906a4.73 4.73 0 01-1.5-.694v1.3L2.817 9.852a2.141 2.141 0 01-.781-2.92c.187-.324.456-.594.78-.782l5.8-3.35v1.3c.45-.313.956-.55 1.5-.694V1.5z" fill="currentColor"></path>
+</svg>
+    )
+}
+const PlayerPlayIcon = ({ size }) => {
+    return(
+<svg role="img" height="20" width="20" viewBox="0 0 24 24"><path d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z" fill="black"></path>
+</svg>
+    )
+}
+const PlayerPauseIcon = ({ size }) => {
+    return(
+<svg role="img" height="20" width="20" viewBox="0 0 24 24"><path d="M5.7 3a.7.7 0 00-.7.7v16.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V3.7a.7.7 0 00-.7-.7H5.7zm10 0a.7.7 0 00-.7.7v16.6a.7.7 0 00.7.7h2.6a.7.7 0 00.7-.7V3.7a.7.7 0 00-.7-.7h-2.6z" fill="black"></path>
 </svg>
     )
 }
@@ -209,7 +221,9 @@ const Icon = ({name, size = 24}) => {
         mid: SoundMidIcon,
         low: SoundLowIcon,
         fullscreen: FullScreenicon,
-        mute: SoundMuteicon
+        mute: SoundMuteicon,
+        pplay: PlayerPlayIcon,
+        ppause: PlayerPauseIcon
     }
     
     const Component = icons[name]
