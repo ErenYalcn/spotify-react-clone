@@ -53,7 +53,6 @@
 ![getir com-clon-pw](https://user-images.githubusercontent.com/57539683/152556644-f57295ee-3f3d-4c83-956c-cfcbe3c763a6.png)
 
 
-In order to improve my skills, I created a clone of getir.com, which is an active market shopping and food delivery service to homes in our country. You can review the codes.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
